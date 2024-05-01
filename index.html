@@ -27,7 +27,11 @@
         },  
         // 侧边栏
         loadSidebar: true,  
-        // 其他 Docsify 配置项...  
+        // toc
+        'page-toc': {
+          tocMaxLevel: 4,
+          target: 'h1, h2, h3, h4',
+        },
       };  
     </script>
 
@@ -42,6 +46,8 @@
     <!-- pdf embed -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script> 
     <script src="//unpkg.com/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
+    <!-- toc -->
+    <script src="//unpkg.com/docsify-page-toc/dist/docsify-page-toc.js"></script>
 
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
